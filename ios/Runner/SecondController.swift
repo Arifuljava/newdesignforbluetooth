@@ -20,6 +20,8 @@ class SecondController: UIViewController {
     @IBOutlet weak var print_copy_quantity: UITextField!
     @IBOutlet weak var print_copy_minus: UIButton!
     @IBOutlet weak var print_copy_plus: UIButton!
+    
+    @IBOutlet weak var uiview_connect_ornot: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Pokemon")
