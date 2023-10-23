@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Second Controller-->
+        <!--New Deign For Home Page-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="secondcontroller" id="Y6W-OH-hqX" customClass="SecondController" customModule="Runner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newdesign" id="Y6W-OH-hqX" customClass="newDeignForHomePage" customModule="Runner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,7 +174,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhY-Nt-VEA">
-                                        <rect key="frame" x="8" y="650" width="398" height="58"/>
+                                        <rect key="frame" x="8" y="648" width="398" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Print Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9n-3P-knC">
                                                 <rect key="frame" x="8" y="20" width="128" height="21"/>
@@ -262,7 +262,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-35-FkG">
-                                        <rect key="frame" x="8" y="580" width="398" height="60"/>
+                                        <rect key="frame" x="8" y="580" width="398" height="58"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Print Density" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo6-oY-jHU">
                                                 <rect key="frame" x="8" y="20" width="128" height="21"/>
@@ -412,6 +412,7 @@
                         <outlet property="print_speed_minus" destination="sDc-CF-ETK" id="by4-x4-Eet"/>
                         <outlet property="print_speed_plus" destination="BXC-Pe-iNE" id="yFf-TL-1Fb"/>
                         <outlet property="print_speed_quantity" destination="1Mh-7Y-Jig" id="WlX-Lm-8lZ"/>
+                        <outlet property="scrollview" destination="NDz-wh-0Qb" id="khm-i2-uNj"/>
                         <outlet property="uiview_connect_ornot" destination="FtB-lL-KB3" id="itR-4f-aAF"/>
                     </connections>
                 </viewController>

@@ -10,6 +10,7 @@ var labelText  = ""
 var print_speedText  = ""
 class SecondController: UIViewController {
 
+    @IBOutlet weak var scrollview: UIScrollView!
     @IBOutlet weak var print_speed_minus: UIButton!
     
     @IBOutlet weak var print_speed_quantity: UITextField!
@@ -33,9 +34,29 @@ class SecondController: UIViewController {
         print_speedText = print_speed_quantity.text!
         
         
-
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+                
+                // Add the gesture recognizer to your view
+        uiview_connect_ornot.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view.
+        
+        let contentSize = CGSize(width: scrollview.frame.size.width, height: scrollview.frame.size.height)
+        scrollview.contentSize = contentSize
     }
+    func scrollScrollViewToPosition() {
+            let targetContentOffset = CGPoint(x: 0, y: 500) // Adjust the Y-coordinate to your desired position
+        scrollview.setContentOffset(targetContentOffset, animated: true)
+        }
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+           // Handle the tap gesture here
+           print("Tap Gesture Recognized")
+        let storyboard = UIStoryboard(name: "SecondStoryBoard", bundle: nil)
+        let secondController = storyboard.instantiateViewController(withIdentifier: "bluelistcontroller") as! BluetothListController
+        
+present(secondController, animated: true, completion: nil)
+        
+       }
+    
     @IBAction func print_speed_plus_operation(_ sender: UIButton) {
         print("hellow")
         print_speedText = print_speed_quantity.text!
